@@ -1,4 +1,5 @@
 ---
 name: postgresql
 dependencies: []
-files: []
+files:
+- postgresql/postgresql-9.5.0.tar.gz

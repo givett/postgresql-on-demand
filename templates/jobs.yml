@@ -9,9 +9,9 @@ update:
   serial: false
 
 jobs:
-  - name: just_install_packages
+  - name: postgresql
     templates:
-    - name: just_install_packages
+    - name: postgresql
       release: postgresql
     instances: 1
     persistent_disk: 0

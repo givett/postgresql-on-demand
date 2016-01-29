@@ -8,4 +8,7 @@ CPUS=$(grep -c ^processor /proc/cpuinfo)
 # $BOSH_INSTALL_TARGET - where you copy/install files to be included in package
 export HOME=/var/vcap
 
-
+tar xfv postgresql/postgresql-9.5.0.tar.gz
+cd postgresql-9.5.0
+./configure --prefix=${BOSH_INSTALL_TARGET}
+make -j${CPUS} && make install
